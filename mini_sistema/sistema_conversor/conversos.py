@@ -5,4 +5,4 @@ cotacao = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,
 cotacao = cotacao.json()
 cotacao_dolar = cotacao['USDBRL']['bid']
 
-print(f'US$ {float(cotacao_dolar)}')
+print(f'R$ {float(cotacao_dolar)}')
